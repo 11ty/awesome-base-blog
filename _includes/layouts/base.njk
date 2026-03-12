@@ -6,6 +6,9 @@
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
 		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+		<link rel="stylesheet" href="{{ '/webawesome/styles/native.css' | url }}">
+		<link rel="stylesheet" href="{{ '/webawesome/styles/utilities.css' | url }}">
+		<link rel="stylesheet" href="{{ '/webawesome/styles/themes/default.css' | url }}">
 
 		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
 		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
@@ -38,21 +41,31 @@
 
 		{#- Add the heading-anchors web component to the JavaScript bundle #}
 		<script type="module">{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}</script>
+		<script type="module" src="{{ '/webawesome/components/button/button.js' | url }}"></script>
+		<script type="module" src="{{ '/webawesome/components/breadcrumb/breadcrumb.js' | url }}"></script>
+		<script type="module" src="{{ '/webawesome/components/tab-group/tab-group.js' | url }}"></script>
+		<script type="module" src="{{ '/webawesome/components/format-date/format-date.js' | url }}"></script>
+		<script type="module" src="{{ '/webawesome/components/tag/tag.js' | url }}"></script>
+		<script type="module" src="{{ '/webawesome/components/icon/icon.js' | url }}"></script>
 	</head>
 	<body>
 		<a href="#main" id="skip-link" class="visually-hidden">Skip to main content</a>
 
 		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
+			<a href="/" class="home-link">
+				<wa-icon name="11ty" family="brands" label="Awesome"></wa-icon>
+
+			{{ metadata.title }}</a>
 
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			<nav>
 				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %}
-				</ul>
+				<wa-tab-group active="default">
+					{%- for entry in collections.all | eleventyNavigation %}
+						<wa-tab panel="{{ entry.title }}"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></wa-tab>
+					{%- endfor %}
+				</wa-tab-group>
+
 			</nav>
 		</header>
 

@@ -47,6 +47,7 @@
 		"zod-validation-error": "^3.5.2"
 	},
 	"dependencies": {
+		"@awesome.me/webawesome": "^3.3.1",
 		"@zachleat/heading-anchors": "^1.0.5"
 	}
 }
