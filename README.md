@@ -110,12 +110,12 @@ Deploy this Eleventy site in just a few clicks on these services:
 
 #### Web Awesome Components
 
-If you want to add a new Web Awesome component to this project, find the import statement for the component you want to use on [Web Awesome's documentation](https://webawesome.com/docs) and add it to `base.njk`.
+If you want to add a new Web Awesome component to this project, find the npm import statement for the component you want to use on [Web Awesome's documentation](https://webawesome.com/docs) and add it to `base.njk`.
 
 - This project uses the following [Web Awesome](https://github.com/shoelace-style/webawesome) components:
 	- [wa-icon](https://webawesome.com/docs/components/icon)
 	- [wa-tab-group](https://webawesome.com/docs/components/tab-group)
-	- [wa-cluster](https://webawesome.com/docs/components/cluster)
+	- [wa-cluster](https://webawesome.com/docs/utilities/cluster)
 	- [wa-tag](https://webawesome.com/docs/components/tag)
 	- [wa-format-date](https://webawesome.com/docs/components/format-date)
 
