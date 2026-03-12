@@ -106,13 +106,18 @@ Deploy this Eleventy site in just a few clicks on these services:
 	- `_includes/layouts/base.njk`: the top level HTML structure
 	- `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
 	- `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
+- `_includes/postslist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `content/index.njk` has an example of how to use it.
+
+#### Web Awesome Components
+
+If you want to add a new Web Awesome component to this project, find the import statement for the component you want to use on [Web Awesome's documentation](https://webawesome.com/docs) and add it to `base.njk`.
+
 - This project uses the following [Web Awesome](https://github.com/shoelace-style/webawesome) components:
 	- [wa-icon](https://webawesome.com/docs/components/icon)
 	- [wa-tab-group](https://webawesome.com/docs/components/tab-group)
 	- [wa-cluster](https://webawesome.com/docs/components/cluster)
 	- [wa-tag](https://webawesome.com/docs/components/tag)
 	- [wa-format-date](https://webawesome.com/docs/components/format-date)
-- `_includes/postslist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `content/index.njk` has an example of how to use it.
 
 #### Content Security Policy
 
