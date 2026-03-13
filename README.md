@@ -1,6 +1,6 @@
 # awesome-base-blog v1
 
-A starter repository showing how to build a blog with the [Eleventy](https://www.11ty.dev/) site generator (using the [v3.0 release](https://github.com/11ty/eleventy/releases/tag/v3.0.0)) and [Web Awesome](https://github.com/shoelace-style/webawesome).
+A starter repository showing how to build a blog with [Build Awesome (11ty)](https://www.11ty.dev/) (using v4), [Web Awesome](https://webawesome.com/), and [Font Awesome](https://fontawesome.com/).
 
 ## Getting Started
 
@@ -75,25 +75,13 @@ Or you can run [debug mode](https://www.11ty.dev/docs/debugging/) to see all the
 	- Home, Archive, and About pages.
 	- [Atom feed included (with easy one-line swap to use RSS or JSON)](https://www.11ty.dev/docs/plugins/rss/)
 	- `sitemap.xml`
-	- Zero-maintenance tag pages ([View on the Demo](https://awesome-base-blog.netlify.app/tags/))
+	- Zero-maintenance tag pages
 	- Content not found (404) page
 
 ## Demos
 
-- [Netlify](https://awesome-base-blog.netlify.app/)
-- [Vercel](https://demo-base-blog.11ty.dev/)
-- [Cloudflare Pages](https://awesome-base-blog-d2a.pages.dev/)
 - [GitHub Pages](https://11ty.github.io/awesome-base-blog/)
 
-## Deploy this to your own site
-
-Deploy this Eleventy site in just a few clicks on these services:
-
-- Read more about [Deploying an Eleventy project](https://www.11ty.dev/docs/deployment/) to the web.
-- [Deploy this to **Netlify**](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/awesome-base-blog)
-- [Deploy this to **Vercel**](https://vercel.com/import/project?template=11ty%2Fawesome-base-blog)
-- Look in `.github/workflows/gh-pages.yml.sample` for information on [Deploying to **GitHub Pages**](https://www.11ty.dev/docs/deployment/#deploy-an-eleventy-project-to-git-hub-pages).
-- [Try it out on **Stackblitz**](https://stackblitz.com/github/11ty/awesome-base-blog)
 
 ### Implementation Notes
 
