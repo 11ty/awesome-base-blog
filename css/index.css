@@ -123,7 +123,7 @@ main :first-child {
 }
 
 header {
-	border-bottom: 1px dashed var(--color-gray-20);
+	/* border-bottom: 1px dashed var(--color-gray-20); */
 }
 
 #skip-link {

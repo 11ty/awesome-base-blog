@@ -82,15 +82,6 @@ Or you can run [debug mode](https://www.11ty.dev/docs/debugging/) to see all the
 
 - [GitHub Pages](https://11ty.github.io/awesome-base-blog/)
 
-## Deploy this to your own site
-
-Deploy this Eleventy site in just a few clicks on these services:
-
-- Read more about [Deploying an Eleventy project](https://www.11ty.dev/docs/deployment/) to the web.
-- [Deploy this to **Netlify**](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/awesome-base-blog)
-- [Deploy this to **Vercel**](https://vercel.com/import/project?template=11ty%awesome-base-blog)
-- Look in `.github/workflows/gh-pages.yml.sample` for information on [Deploying to **GitHub Pages**](https://www.11ty.dev/docs/deployment/#deploy-an-eleventy-project-to-git-hub-pages).
-- [Try it out on **Stackblitz**](https://stackblitz.com/github/11ty/awesome-base-blog)
 
 ### Implementation Notes
 
@@ -104,6 +95,17 @@ Deploy this Eleventy site in just a few clicks on these services:
 	- `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
 	- `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
 - `_includes/postslist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `content/index.njk` has an example of how to use it.
+
+#### Web Awesome Components
+
+If you want to add a new Web Awesome component to this project, find the npm import statement for the component you want to use on [Web Awesome's documentation](https://webawesome.com/docs) and add it to `base.njk`.
+
+- This project uses the following [Web Awesome](https://github.com/shoelace-style/webawesome) components:
+	- [wa-icon](https://webawesome.com/docs/components/icon)
+	- [wa-tab-group](https://webawesome.com/docs/components/tab-group)
+	- [wa-cluster](https://webawesome.com/docs/utilities/cluster)
+	- [wa-tag](https://webawesome.com/docs/components/tag)
+	- [wa-format-date](https://webawesome.com/docs/components/format-date)
 
 #### Content Security Policy
 
